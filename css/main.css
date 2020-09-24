@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'Jacobs Chronos';
+    src: url('../assets/font/JacobsChronos-Regular.ttf') format('truetype'),
+        url('../assets/font/JacobsChronos-Regular.woff2') format('woff2'),
+        url('../assets/font/JacobsChronos-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Jacobs Chronos';
+    src: url('../assets/font/JacobsChronos-Bold.ttf') format('truetype'),
+        url('../assets/font/JacobsChronos-Bold.woff2') format('woff2'),
+        url('../assets/font/JacobsChronos-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Jacobs Chronos';
+    src: 
+        url('../assets/font/JacobsChronos-Light.ttf') format('truetype'),
+        url('../assets/font/JacobsChronos-Light.woff2') format('woff2'),
+        url('../assets/font/JacobsChronos-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  
+  
+  html, body{ height:100%; margin:0; }
+  body{
+    font-family: 'Jacobs Chronos', sans-serif;
+    background-color: #FFFFFF;
+    color: #333333;
+    height: 100vh;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex; 
+    -webkit-box-orient:vertical; 
+    -webkit-box-direction:normal; 
+        -ms-flex-direction:column; 
+            flex-direction:column; 
+    overflow-x:hidden;
+  }
+  h1, h2, h3, h4, h5{
+    color: #333333;
+  }
+  h1.display{
+    font-size:300px;
+  }
+  h1{
+    font-size:56px;
+  }
+  h2{
+    font-size:24px;
+  }
+  h3{
+    font-size:22px;
+  }
+  h4{
+    font-size:18px;
+  }
+  p{
+    font-size:15px;
+  }
+
+/* ANIMATED X */
+.navbar-toggle.x .icon-bar:nth-of-type(1) {
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	-webkit-transform-origin: 10% 10%;
+	-ms-transform-origin: 10% 10%;
+	transform-origin: 10% 10%;
+}
+
+.navbar-toggle.x .icon-bar:nth-of-type(2) {
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+.navbar-toggle.x .icon-bar:nth-of-type(3) {
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-webkit-transform-origin: 10% 90%;
+	-ms-transform-origin: 10% 90%;
+	transform-origin: 10% 90%;
+}
+
+/* ANIMATED X COLLAPSED */
+.navbar-toggle.x.collapsed .icon-bar:nth-of-type(1) {
+	-webkit-transform: rotate(0);
+	-ms-transform: rotate(0);
+	transform: rotate(0);
+}
+
+.navbar-toggle.x.collapsed .icon-bar:nth-of-type(2) {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+.navbar-toggle.x.collapsed .icon-bar:nth-of-type(3) {
+	-webkit-transform: rotate(0);
+	-ms-transform: rotate(0);
+	transform: rotate(0);
+}
+/* END ANIMATED X */
+
+.btn-group-lg > .btn, .btn-lg {
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0rem;
+    background-color: #007D55;
+    color: white;
+    border-color: rgba(0,0,0,0);
+}
+.btn-group-lg > .btn, .btn-lg:hover {
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0rem;
+    background-color: #003C2D;
+    color: white;
+    border-color: rgba(0,0,0,0);
+}
+#navLogo {
+    top: 0;
+    transition: 0.2s; /* Add a transition effect (when scrolling - and font size is decreased) */
+  }
+section#top{
+    padding-top: 12rem;
+}
+  
