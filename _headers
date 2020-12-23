@@ -1,0 +1,12 @@
+# a path:
+/index.html
+  # headers for that path:
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+# Disable unsafe inline/eval, only allow loading of resources (images, fonts, scripts, etc.) over https
+# Note that this does not provide any XSS protection
+Content-Security-Policy: default-src 'self' https:
+
+
+# Prevent browsers from incorrectly detecting non-scripts as scripts
+X-Content-Type-Options: nosniff
