@@ -26,7 +26,6 @@ html, body{ height:100%; margin:0; }
 body{
   font-family: 'Jacobs Chronos', sans-serif;
   color: #333333;
-  height: 100vh;
   display:flex; 
   flex-direction:column; 
 }
@@ -54,25 +53,55 @@ section {
   margin-top: auto;
  } */
 
-#main{
-  min-height:60%;
-}
 #hero {
-	min-height: 100%;
+  height: 100vh;
 	background: url(../img/background-cityscape.svg);
 	background-size: cover;
 	background-position: center;
 	padding-top: 10rem;
 }
+#background-slopes {
+	background: url(../img/background-slopes.svg);
+	background-size: cover;
+  background-position: center;
+  background-position-y: 30rem;
+}
+#background-slope-grey {
+	background: url(../img/background-slope-grey.svg);
+	background-size: cover;
+  background-position: center;
+  background-position-y: 2rem;
+}
+#background-slope-green {
+	background: url(../img/background-semicircle.svg);
+	background-size: cover;
+  background-position: center;
+  background-position-y: -10rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+#about{
+  background: rgb(10,210,135);
+background: -moz-linear-gradient(158deg, rgba(10,210,135,0.2) 0%, rgba(0,250,199,0.1) 100%);
+background: -webkit-linear-gradient(158deg, rgba(10,210,135,0.2) 0%, rgba(0,250,199,0.1) 100%);
+background: linear-gradient(158deg, rgba(10,210,135,0.2) 0%, rgba(0,250,199,0.1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0ad287",endColorstr="#00fac7",GradientType=1);
+}
+
 
 p{
   font-weight:300;
 }
-
-.navbar .container{
-  margin-left: 0;
-  max-width: 1840px;
+main ul{
+  list-style-image: url(../img/list-style.svg);
+  padding-left: 16px;
+  font-weight:300;
 }
+li:before{
+  font-size:300px;
+  color:#00D384;
+}
+
 .btn-primary{
   background-color: #F99F1C;
   border-color: #F99F1C;
@@ -105,9 +134,6 @@ p{
   font-weight: 700;
 }
 
-main{
-  min-height: 100vh;
-}
 .text-grey{
   color: #CFD8DC;
 }
@@ -218,5 +244,8 @@ main{
 }
 
 .bg-transparent{
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.navbar-light{
+  background-color:rgba(255,255,255,0.4);
 }
