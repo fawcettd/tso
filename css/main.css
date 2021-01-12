@@ -45,9 +45,6 @@ h1, h2, h3, h4, h5{
   }
 }
 
-section {
-  padding: 80px 0;
-}
 /* footer{
   min-height:180px;
   margin-top: auto;
@@ -76,7 +73,6 @@ section {
 	background: url(../img/background-semicircle.svg);
 	background-size: cover;
   background-position-y: -12rem;
-  padding-bottom: 10rem;
 }
 #about{
   background: rgb(10,210,135);
@@ -217,6 +213,13 @@ li:before{
     
   }
 }
+@media only screen and (min-width: 412px) {
+  .display-title{font-size: 3.5rem;}
+}
+@media only screen and (max-width: 411px) {
+  .display-title{font-size: 2.5rem;}
+}
+
 /* change the color of active or hovered links */
 
 .nav-item:hover .nav-link {
@@ -247,6 +250,32 @@ li:before{
 .navbar-light{
   background-color:rgba(255,255,255,0.4);
 }
+@media only screen and (min-width: 701px) {
+  .navbar-light{background-color:rgba(255,255,255,0.4);}
+}
+@media only screen and (max-width: 700px) {
+  .navbar-light{
+    background-color:rgba(255,255,255,1);
+    box-shadow: 0 1px 3px rgba(51, 51, 51, 0.122), 0 1px 2px rgba(51, 51, 51, 0.24);
+  }
+}
+.navbar {
+  -webkit-transition: all 0.6s ease-out;
+  -moz-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+  -ms-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+}
+
+.navbar.scrolled {
+  background: rgb(255, 255, 255); /* IE */
+  background: rgba(255, 255, 255, 1); /* NON-IE */
+  box-shadow: 0 1px 3px rgba(51, 51, 51, 0.122), 0 1px 2px rgba(51, 51, 51, 0.24);
+}
+#product-logo{
+  width: 200px;
+  transition: 0.6s;
+}
 .svg-cheer{
   width:200px;
   position:absolute;
@@ -257,4 +286,13 @@ li:before{
 }
 .hide{
   display:none;
+}
+#contact-main {
+  width: 100%;
+  background: url(../img/background-slope-grey.svg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background-repeat: no-repeat;
 }
