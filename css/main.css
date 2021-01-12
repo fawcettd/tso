@@ -75,9 +75,7 @@ section {
 #background-slope-green {
 	background: url(../img/background-semicircle.svg);
 	background-size: cover;
-  background-position: center;
-  background-position-y: -10rem;
-  padding-top: 10rem;
+  background-position-y: -12rem;
   padding-bottom: 10rem;
 }
 #about{
