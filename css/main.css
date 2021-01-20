@@ -69,10 +69,41 @@ h1, h2, h3, h4, h5{
   background-position: center;
   background-position-y: 2rem;
 }
-#background-slope-green {
-	background: url(../img/background-semicircle.svg);
-	background-size: cover;
-  background-position-y: -12rem;
+
+@media only screen and (min-width: 1600px) {
+  #background-slope-green {
+    background: url(../img/background-semicircle.svg);
+    background-size: cover;
+    background-position-y: -19rem;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  #background-slope-green {
+    background: url(../img/background-semicircle.svg);
+    background-size: cover;
+    background-position-y: -9rem;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  #background-slope-green {
+    background: url(../img/background-semicircle.svg);
+    background-size: cover;
+    background-position-y: -9rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #background-slope-green {
+    background: url(../img/background-semicircle.svg);
+    background-size: cover;
+    background-position-y: -11rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #background-slope-green {
+    background: url(../img/background-semicircle.svg);
+    background-size: cover;
+    background-position-y: -13rem;
+  }
 }
 #about{
   background: rgb(10,210,135);
@@ -85,6 +116,10 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0ad287",endCo
 
 p{
   font-weight:300;
+  font-size:20px;
+}
+footer p{
+  font-size: 16px;
 }
 main ul{
   list-style-image: url(../img/list-style.svg);
@@ -362,4 +397,54 @@ svg:not(:root) {
 }
 :not(svg) {
   transform-origin: 0px 0px;
+}
+.mini-background{
+  background: url(../img/circle-graphic.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.svg-card-bk{
+  position:absolute;
+  z-index: 1;
+}
+@media only screen and (max-width: 501px){
+  .svg-card-bk{
+    position:absolute;
+    z-index: 1;
+  }
+}
+@media only screen and (max-width: 500px){
+  .svg-card-bk{
+    display:none;
+    position:absolute;
+    z-index: 1;
+  }
+}
+#svg-card-bk-1{
+  left:5rem;
+  bottom:1rem;
+  z-index: 1;
+}
+#svg-card-bk-2{
+  right:2.5rem;
+  bottom:6rem;
+  z-index: 1;
+}
+#svg-card-bk-3{
+  right:6rem;
+  bottom:1rem;
+  z-index: 1;
+}
+#svg-card-bk-4{
+  right:9rem;
+  top:2rem;
+  z-index: 1;
+}
+#benefits h2,p{
+  z-index:5;
+}
+#sam-animated{
+  z-index: 99;
+  position:relative;
 }
