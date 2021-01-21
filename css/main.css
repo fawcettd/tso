@@ -132,8 +132,16 @@ li:before{
   border-color: #F99F1C;
   border-radius: 0px;
   font-weight: 700;
+  color: #000;
 }
-
+.nav-item .btn-primary{
+  background-color: rgba(249, 160, 28, 0);
+  border-color: #F99F1C;
+  border-width:2px;
+  border-radius: 0px;
+  font-weight: 700;
+  color: #000;
+}
 .btn-primary:hover{
   background-color: #C05C27;
   border-color: #F99F1C;
@@ -167,7 +175,7 @@ li:before{
   cursor: pointer;
   background: #F99F1C;
   text-decoration: none;
-  color: #fff;
+  color: #000000;
   -webkit-tap-highlight-color: transparent;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -175,6 +183,7 @@ li:before{
 }
 .btn-cta {
   font-family: 'Jacobs Chronos',sans-serif;
+  color:#000000;
   font-size: 1rem;
   display: inline-block;
   vertical-align: middle;
@@ -187,6 +196,9 @@ li:before{
   -webkit-transition-duration: .3s;
   transition-duration: .3s;
   border: none;
+}
+.btn-cta:hover{
+  color: white;
 }
 
 .primary-color{
