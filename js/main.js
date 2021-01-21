@@ -23,5 +23,3 @@ if($('.navbar').length > 0){
       checkScroll();
   });
 }
-
-window.addEventListener("cookieAlertAccept")
