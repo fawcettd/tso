@@ -45,12 +45,33 @@ h1, h2, h3, h4, h5{
   }
 }
 
-#hero {
-  height: 100vh;
-	background: url(../img/background-cityscape.svg);
-	background-size: cover;
-	background-position: center;
-	padding-top: 10rem;
+@media only screen and (min-width: 601px) {
+  #hero {
+    height: 100vh;
+    background: url(../img/background-cityscape.svg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 10rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #hero {
+    background: none;
+    padding-top: 6rem;
+  }
+}
+@media only screen and (min-width: 601px) {
+  #hero-mobile {
+    display:none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #hero-mobile {
+    background: none;
+    padding-bottom:3rem;
+    padding-left:0;
+    padding-right:0;
+  }
 }
 #background-slopes {
 	background: url(../img/background-slopes.svg);
@@ -295,7 +316,13 @@ li:before{
   .display-title{font-size: 3.5rem;}
 }
 @media only screen and (max-width: 411px) {
-  .display-title{font-size: 2.5rem;}
+  .display-title{font-size: 2rem;}
+}
+@media only screen and (min-width: 412px) {
+  p{font-size: 20px;}
+}
+@media only screen and (max-width: 411px) {
+  p{font-size: 16px;}
 }
 
 /* change the color of active or hovered links */
