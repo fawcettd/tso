@@ -23,3 +23,5 @@ if($('.navbar').length > 0){
       checkScroll();
   });
 }
+
+AOS.init({ disable: 'mobile', once: true });
